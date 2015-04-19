@@ -19,6 +19,7 @@ h1 {
 h2 {
     font-weight: 300;
     font-size: 36px;
+    color: #3b92c8;
 }
 
 h3 {
@@ -53,7 +54,7 @@ h3 {
     background-color: #444444;
     width: 100%;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
 }
 
 #drawsgoodInfoChunk p {
@@ -162,7 +163,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     display: inline-block;
-    width: 200px;
+    width: 256px;
     padding: 20px;
 }
 
@@ -193,9 +194,7 @@ h3 {
 }
 
 .imageStyling {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #595959;
+    box-shadow: 0px 0px 15px #b2b2b2;
     border-radius: 5px;
     overflow: hidden;
 }
