@@ -31,6 +31,7 @@ $(".myButton").hover(function() {
 
 $("#one").hover(function() {
     $(this).find(blurbOverlay).toggleClass("blurbMove");
+    $(this).find(imageStyling).toggleClass("hoverShadow");
 });
 
 $("#two").hover(function() {
