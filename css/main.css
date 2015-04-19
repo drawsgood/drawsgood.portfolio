@@ -125,9 +125,10 @@ h2 {
     padding: 20px;
     box-shadow: 0px 0px 10px #b2b2b2;
     border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px #b2b2b2;
     transition: box-shadow 200ms;
+    -webkit-transition: -webkit-box-shadow 200ms;
     cursor: pointer;
-    transition: width 1s;
 }
 
 .blockLift {
