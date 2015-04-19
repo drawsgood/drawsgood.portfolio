@@ -41,10 +41,3 @@ $("#three").hover(function() {
     $(this).find(blurbOverlay).toggleClass("blurbMove");
 });
 
-$(".buttonLarge").hover(function() {
-    $(this).toggleClass("buttonOn");
-    $(this).toggleClass("textOn");
-});
-
-
-
