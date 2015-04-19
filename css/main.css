@@ -22,7 +22,7 @@ h2 {
     color: #3b92c8;
 }
 
-h3 {
+.title h3 {
     padding: 10px;
     margin: 0px;
 }
@@ -83,10 +83,6 @@ h3 {
     top: 120px;
 }
 
-.hoverShadow {
-    box-shadow: 0px 5px 25px #b2b2b2;
-}
-
 .myButton {
     margin-top: 10px;
     width: 316px;
@@ -116,20 +112,27 @@ h3 {
 }
 
 #studyBlock {
-    width: 1100px;
+    width: 1300px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .block {
     width: 320px;
-    height: 400px;
     margin: 20px;
     display: inline-block;
     vertical-align: top;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #b2b2b2;
+    border-radius: 10px;
+    transition: box-shadow 200ms;
+    cursor: pointer;
+    transition: width 1s;
 }
 
-
+.blockLift {
+    box-shadow: 0px 5px 25px #b2b2b2;
+}
 
 .caseStudyHeader {
     color: #fff;
@@ -197,9 +200,11 @@ h3 {
 }
 
 .imageStyling {
-    box-shadow: 0px 0px 15px #b2b2b2;
-    border-radius: 5px;
     overflow: hidden;
+}
+
+.hoverShadow {
+    box-shadow: 0px 5px 10px #b2b2b2;
 }
 
 #copypopThumbBackground {
@@ -223,7 +228,6 @@ h3 {
 
 .chunk {
     height:100vh;
-
 }
 
 .description {
