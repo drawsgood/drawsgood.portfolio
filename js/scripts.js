@@ -54,5 +54,19 @@ $(".buttonLarge").hover(function() {
     $(this).toggleClass("textOn");
 });
 
+$(".overlayTrigger").click(function() {
+    $("#overlay").addClass("overlayDarken");
+    $("#overlay").addClass("fadeIn");
+    $("#contentDiv_container").removeClass("hide");
+    $("#displayDiv").addClass("moveDiv");
+});
+
+$("#closeDetail").click(function() {
+    $("#overlay").removeClass("overlayDarken");
+    $("#overlay").removeClass("fadeIn");
+    $("#contentDiv_container").addClass("hide");
+    $("#displayDiv").removeClass("moveDiv");
+});
+
 
 
