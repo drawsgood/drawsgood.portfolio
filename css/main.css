@@ -378,9 +378,9 @@ h3 {
 
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
     
-    .description {
+.description {
     display: block;
     width: 100%;
     font-size: 14px;
@@ -430,7 +430,7 @@ h3 {
     
     
     
-    #drawsgoodInfoChunk p {
+#drawsgoodInfoChunk p {
     display: none;
     color: #efefef;
     width: 75%;
