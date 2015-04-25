@@ -62,7 +62,7 @@ $(".overlayTrigger").click(function() {
 });
 
 $("#closeDetail").click(function() {
-    $("#overlay").removeClass("overlayDarken");
+    $("#overlay").removeClass("overlayDarken").addClass("overlayLighten");
     $("#overlay").removeClass("fadeIn");
     $("#contentDiv_container").addClass("hide");
     $("#displayDiv").removeClass("moveDiv");
