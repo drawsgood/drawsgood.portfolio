@@ -76,15 +76,23 @@ h3 {
     position: relative;
     display: block;
     width: 960px;
-    height: 640px;
     background-color: white;
     left: 50%;
-    top: 50%;
+    top: 100px;
     margin-left: -480px;
-    margin-top: -320px;
     border-radius: 20px;
     transform: translate(0px,1000px);
     transition: transform .5s;
+}
+
+#displayDiv h2 {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+#displayDiv i {
+    padding: 30px;
+    display: inline;
 }
 
 #displayDiv.moveDiv {
@@ -156,7 +164,7 @@ h3 {
     border-style: solid;
     display: block;
     cursor: pointer;
-    transition: all 200ms;
+    transition: opacity 200ms;
 }
 
 .buttonText {
@@ -176,7 +184,7 @@ h3 {
 }
 
 #studyBlock {
-    width: 960px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -296,6 +304,11 @@ h3 {
     left: 0px;
 }
 
+.chunk {
+    padding-bottom: 50px;
+}
+
+
 .description {
     display: block;
     width: 960px;
@@ -346,12 +359,24 @@ h3 {
     margin-left: auto;
     margin-right: auto;
 }
+
+.description {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
     
 }
 
 @media only screen and (max-width: 800px) {
     
 #studyBlock {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+.description {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -405,6 +430,70 @@ and (max-device-width: 640px)
     
     .image {
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #studyBlock {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+.block {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    border-radius: 0px;
+}
+    
+.myButton {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-left: none;
+    border-right: none;
+}
+    
+    
+    
+#drawsgoodInfoChunk p {
+    display: none;
+    color: #efefef;
+    width: 75%;
+}
+    
+
+}
+
+@media only screen
+and (max-width: 480px)
+
+{
+    
+.description {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    min-width: 200px;
+}
+    
+    #caseStudy_2 {
+        background-color: red;
+    }
+    
+    
+    .description p {
+        text-align: center;
+    }
+    
+    .pullLeft {
+        float:none;
+    }
+    
+    .image {
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }

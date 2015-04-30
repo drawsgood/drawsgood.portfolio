@@ -1,3 +1,30 @@
+
+    //wait for page to load
+    $(document).ready(function(){
+      // Extract the text from the template .html() is the jquery helper method for that
+      var raw_template = $('#feature-template').html();
+      // Compile that into an handlebars template
+      var template = Handlebars.compile(raw_template);
+      // Retrieve the placeHolder where the Posts will be displayed 
+      var placeHolder = $("#studyBlock");
+      // Fetch all Blog Posts data from server in JSON
+      $.getJSON("../featuredPosts.json", function(myPosts){
+        $.each(myPosts, function(indexArray, element){
+          // Generate the HTML for each post
+          var html = template(element);
+          // Render the posts into the page
+          placeHolder.append(html);
+        });
+      });
+        
+        
+        
+        
+    });
+
+
+$(window).load(function(){
+
 var blurbOverlay = ".blurbOverlay";
 
 //jQuery(document).ready(function(){
@@ -67,6 +94,8 @@ $("#closeDetail").click(function() {
     $("#contentDiv_container").addClass("hide");
     $("#displayDiv").removeClass("moveDiv");
 });
+    
+    
 
-
+});
 

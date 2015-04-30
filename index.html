@@ -9,16 +9,24 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400' rel='stylesheet' type='text/css'>
+        
     </head>
     <body>
         <div id="siteContainer">
         <div id="overlay"></div> 
         <div class="hide" id="contentDiv_container">
             <div id="displayDiv">
-            <div class="displayDetailHeader">
+<!--
+                <div class="displayDetailHeader">
                 <h2>Imation Character Illustrations</h2>
                 <i id="closeDetail" class="fa fa-close fa-3x pullRight"></i></div>
-            
+            <div class="detailDescription">
+                <p>Character concepts and illustrations created for a marketing campaign for Imation</p>
+                <div id="main">test</div>
+                
+                </div>
+-->                
+                
             </div>
             </div>
 
@@ -54,22 +62,10 @@
                     
      <div id="myFeatured">               
     <div id="studyBlock">
-        <div id="one" class="block">
-            <div class="title">
-                <h3>Copypop</h3>
-            </div>
-            <div class="imageStyling" id="copypopThumbBackground">
-            <div class="blurbOverlay">
-                <h3>Copypop</h3>
-                <p>Short blurb about the project</p>
-                </div>
-            
-            </div>
-            <div class="myButton">
-                <span class="buttonText">View Project</span>
-            </div>
-        </div>
 
+
+        
+<!--
         <div id="two" class="block">
             <div class="title">
                 <h3>Imation</h3>
@@ -99,6 +95,8 @@
                 <span class="buttonText">View Project</span>
             </div>
         </div>
+         
+-->
                 </div>            
                 </div>
                 
@@ -165,11 +163,45 @@
 
         
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+        
+<script id="detail-template" type="text/x-handlebars-template">        
+
+            <div class="displayDetailHeader">
+                <h2>{{featureTitle}}</h2>
+                <i id="closeDetail" class="fa fa-close fa-3x pullRight"></i></div>
+            <div class="detailDescription">
+                <p>{{featureBlurb}}</p>
+                <div id="main">test</div>
+                
+                </div>
+
+</script>
+        
+<script id="feature-template" type="text/x-handlebars-template">
+        <div id="{{ postNumber }}" class="block">
+            <div class="title">
+                <h3>{{featureTitle}}</h3>
+            </div>
+            <div class="imageStyling" id="{{ featureImage }}">
+            <div class="blurbOverlay">
+                <h3>{{ featureTitle }}<a href="{{ featureTitle }}"></a><i class="overlayTrigger fa fa-search pullRight"></i></a></h3>
+                <p>{{ featureBlurb }}</p>
+                </div>
             
-<script type="text/javascript" src="js/scripts.js"></script>
+            </div>
+            <div class="myButton">
+                <span class="buttonText">View Project</span>
+            </div>
+        </div>
+</script>
+                        
+        
+        
+    <script type="text/javascript" src="js/handlebars-v3.0.1.js"></script>
+            
 <script type="text/javascript" charset="utf-8" src="https://s3.amazonaws.com/manycontacts-bars/55330a3b88b1207d48dcac03.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
             
-            
+  <script type="text/javascript" src="js/scripts.js"></script>          
     </body>
 </html>

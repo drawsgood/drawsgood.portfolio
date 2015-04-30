@@ -1,0 +1,21 @@
+
+"myPosts": [
+        {
+            "postNumber": "one",
+            "featureTitle": "Imation",
+            "featureBlurb": "Stuff about the imation project.",
+            "featureImage": "imationThumbBackground"
+        },
+        {
+            "postNumber": "two",
+            "featureTitle": "Copypop",
+            "featureBlurb": "Stuff about the copypop project.",
+            "featureImage": "copypopThumbBackground"
+        },
+        {
+            "postNumber": "three",
+            "featureTitle": "Skullcandy",
+            "featureBlurb": "Stuff about the skullcandy project.",
+            "featureImage": "skullcandyThumbBackground"
+        }
+    ]
